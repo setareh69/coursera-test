@@ -4,12 +4,98 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>module2-solution</title>
+	<style>
+		*	{
+			box-sizing: border-box;
+		}
+		h1 {
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		section {
+			background-color: yellow;
+			padding: 10px;
+			border: 1px solid black;
+			margin-bottom: 30px;
+			margin-right: 10px;
+			position: relative;
+			
+
+		}
+		h2	{
+			width: 120px;
+			border: 1px solid black;
+			margin-top: 0px;
+			margin-bottom: 1px;
+			font-size: 15px;
+			text-align: center;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			
+
+		}
+	img	{width: 150px;
+		border: 1px solid black;
+		clear: right;
+		float: right;
+		
+	}
+
+	#box1 {float: left;
+
+	}
+	#box2 {float: left;
+
+	}
+	#box3 { float: left;
+	}
+	#box1 h2 {
+		background-color: red;
+	}
+	#box2 h2 {
+		background-color: pink;
+	}
+	#box3 h2 {
+		background-color: lightgreen;
+	}	
+
+	/***** large media ****/
+@media	(min-width: 992px) {
+	section {
+		width: 32%;
+	}
+}
+
+	/***** medium *****/
+@media	(min-width: 768px) and (max-width: 991px) {
+	#box1 {
+		width: 45%;
+	}
+	#box2 {
+		width: 45%;
+	}
+	#box3 {
+		width: 91%;
+	}
+}
+
+	/***** small media ****/
+@media (max-width: 767px) {
+
+}
+
+	</style>
+	
+	
 </head>
 <body>
 <h1>Our Menu</h1>
 <div>
-	<div>food 1
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<section id="box1">
+		<h2>Cakes 
+		</h2>
+<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -17,9 +103,12 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	
 </p>
-	</div>
-	<div>food 2
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		
+	</section> 
+	<section id="box2">
+		<h2>French Macarons
+		</h2>
+<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -27,17 +116,19 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	
 </p>
-	</div>food 3
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+</section>
+	<section id="box3">
+		<h2>Cookies
+		</h2>
+<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			
-		</p>
-	</div>
+</p>
+	</section>
 
 </div>
 </body>
